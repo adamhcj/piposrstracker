@@ -1,11 +1,10 @@
 'use client';
 
 import {
-  UserGroupIcon,
+  ClockIcon,
   HomeIcon,
-  DocumentDuplicateIcon,
+  ChartBarIcon,
 } from '@heroicons/react/24/outline';
-import {AccessAlarm, BarChart } from '@mui/icons-material';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
@@ -17,9 +16,9 @@ const links = [
   {
     name: 'Personal Bests',
     href: '/dashboard/personalbest',
-    icon: AccessAlarm,
+    icon: ClockIcon,
   },
-  { name: 'Levels', href: '/dashboard/level', icon: BarChart },
+  { name: 'Levels', href: '/dashboard/level', icon: ChartBarIcon },
 ];
 
 export default function NavLinks() {
