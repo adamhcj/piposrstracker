@@ -5,8 +5,8 @@ import {
   HomeIcon,
   DocumentDuplicateIcon,
 } from '@heroicons/react/24/outline';
-import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
-import BarChartIcon from '@mui/icons-material/BarChart';
+import AccessAlarmIcon from '@mui/icons-material';
+import BarChartIcon from '@mui/icons-material';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
