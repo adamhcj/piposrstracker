@@ -35,14 +35,14 @@ export default function Page() {
             let new_revenue = {};
             // {
             //     "timestamp": 1721116755.4696517,
-            //     "name": "Laksa",
+            //     "playername": "Laksa",
             //     "item": "135 x Onyx bolt tips",
             //     "value": "1,156,545"
             // }
             
             for (let i = 0; i < data.length; i++) {
                 let item = data[i];
-                let player = item['name'];
+                let player = item['playername'];
                 let value = item['value'];
                 if (value == "?") {
                     continue;
