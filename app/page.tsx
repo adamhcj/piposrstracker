@@ -11,7 +11,7 @@ export default function Page() {
 
   useEffect(() => {
     // redirect to dashboard
-    window.location.href = '/dashboard';
+    window.location.href = '/';
   }, []);
 
   return (
