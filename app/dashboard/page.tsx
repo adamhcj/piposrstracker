@@ -32,7 +32,7 @@ export default function Page() {
 
         parser.parse().then(data => {
             console.log(data)
-            let new_revenue = {};
+            let new_revenue : any = {};
             // {
             //     "timestamp": 1721116755.4696517,
             //     "playername": "Laksa",
