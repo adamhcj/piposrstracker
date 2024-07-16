@@ -5,8 +5,8 @@ import {
   HomeIcon,
   DocumentDuplicateIcon,
 } from '@heroicons/react/24/outline';
-import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
-import BarChartIcon from '@mui/icons-material/BarChart';
+import AccessAlarm from '@mui/icons-material/AccessAlarm';
+import BarChart from '@mui/icons-material/BarChart';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
@@ -18,9 +18,9 @@ const links = [
   {
     name: 'Personal Bests',
     href: '/dashboard/personalbest',
-    icon: AccessAlarmIcon,
+    icon: AccessAlarm,
   },
-  { name: 'Levels', href: '/dashboard/level', icon: BarChartIcon },
+  { name: 'Levels', href: '/dashboard/level', icon: BarChart },
 ];
 
 export default function NavLinks() {
