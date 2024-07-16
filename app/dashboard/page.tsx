@@ -14,7 +14,7 @@ export default function Page() {
     const [revenue, setRevenue] = useState([{'month': 'mianbaoroll', 'revenue': 0}, {'month': 'rubiak', 'revenue': 100000000}, {'month': 'alpoopi', 'revenue': 300000000}, {'month': 'onyo', 'revenue': 1000000000}]);
     // iterate through revenue and divide by 1000000
 
-    
+    const [originalDrops, setOriginalDrops] = useState([{'timestamp': 1721116755.4696517, 'playername': 'Laksa', 'item': '135 x Onyx bolt tips', 'value': '1,156,545'}]);
 
 
     useEffect(() => {
@@ -32,6 +32,7 @@ export default function Page() {
 
         parser.parse().then(data => {
             console.log(data)
+            setOriginalDrops(data);
             let new_revenue : any = {};
             // {
             //     "timestamp": 1721116755.4696517,

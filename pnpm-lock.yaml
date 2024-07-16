@@ -17,6 +17,9 @@ importers:
       '@heroicons/react':
         specifier: ^2.1.4
         version: 2.1.4(react@19.0.0-rc-f38c22b244-20240704)
+      '@mui/icons-material':
+        specifier: ^5.16.4
+        version: 5.16.4(@mui/material@5.16.2(@emotion/react@11.11.4(@types/react@18.3.3)(react@19.0.0-rc-f38c22b244-20240704))(@emotion/styled@11.11.5(@emotion/react@11.11.4(@types/react@18.3.3)(react@19.0.0-rc-f38c22b244-20240704))(@types/react@18.3.3)(react@19.0.0-rc-f38c22b244-20240704))(@types/react@18.3.3)(react-dom@19.0.0-rc-f38c22b244-20240704(react@19.0.0-rc-f38c22b244-20240704))(react@19.0.0-rc-f38c22b244-20240704))(@types/react@18.3.3)(react@19.0.0-rc-f38c22b244-20240704)
       '@mui/material':
         specifier: ^5.16.2
         version: 5.16.2(@emotion/react@11.11.4(@types/react@18.3.3)(react@19.0.0-rc-f38c22b244-20240704))(@emotion/styled@11.11.5(@emotion/react@11.11.4(@types/react@18.3.3)(react@19.0.0-rc-f38c22b244-20240704))(@types/react@18.3.3)(react@19.0.0-rc-f38c22b244-20240704))(@types/react@18.3.3)(react-dom@19.0.0-rc-f38c22b244-20240704(react@19.0.0-rc-f38c22b244-20240704))(react@19.0.0-rc-f38c22b244-20240704)
@@ -392,6 +395,17 @@ packages:
 
   '@mui/core-downloads-tracker@5.16.2':
     resolution: {integrity: sha512-BUaUnl3pbd00YR2Da241CYtPw6ldNahyCKZMXXs5F1JZTFKWotNq3qQJC6Yq2YQlK3EflfBqzHj6XwwecocHMg==}
+
+  '@mui/icons-material@5.16.4':
+    resolution: {integrity: sha512-j9/CWctv6TH6Dou2uR2EH7UOgu79CW/YcozxCYVLJ7l03pCsiOlJ5sBArnWJxJ+nGkFwyL/1d1k8JEPMDR125A==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      '@mui/material': ^5.0.0
+      '@types/react': ^17.0.0 || ^18.0.0
+      react: ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
 
   '@mui/material@5.16.2':
     resolution: {integrity: sha512-VhPiXg60uITmXnaSr6qlxIOgOviYYBe0Hh7rNaSpaTBAtI6mIcYhdl0jihoL0PN9qa9cEm0GZFdBL0K2/Ub56w==}
@@ -1959,6 +1973,14 @@ snapshots:
       '@types/react': 18.3.3
 
   '@mui/core-downloads-tracker@5.16.2': {}
+
+  '@mui/icons-material@5.16.4(@mui/material@5.16.2(@emotion/react@11.11.4(@types/react@18.3.3)(react@19.0.0-rc-f38c22b244-20240704))(@emotion/styled@11.11.5(@emotion/react@11.11.4(@types/react@18.3.3)(react@19.0.0-rc-f38c22b244-20240704))(@types/react@18.3.3)(react@19.0.0-rc-f38c22b244-20240704))(@types/react@18.3.3)(react-dom@19.0.0-rc-f38c22b244-20240704(react@19.0.0-rc-f38c22b244-20240704))(react@19.0.0-rc-f38c22b244-20240704))(@types/react@18.3.3)(react@19.0.0-rc-f38c22b244-20240704)':
+    dependencies:
+      '@babel/runtime': 7.24.8
+      '@mui/material': 5.16.2(@emotion/react@11.11.4(@types/react@18.3.3)(react@19.0.0-rc-f38c22b244-20240704))(@emotion/styled@11.11.5(@emotion/react@11.11.4(@types/react@18.3.3)(react@19.0.0-rc-f38c22b244-20240704))(@types/react@18.3.3)(react@19.0.0-rc-f38c22b244-20240704))(@types/react@18.3.3)(react-dom@19.0.0-rc-f38c22b244-20240704(react@19.0.0-rc-f38c22b244-20240704))(react@19.0.0-rc-f38c22b244-20240704)
+      react: 19.0.0-rc-f38c22b244-20240704
+    optionalDependencies:
+      '@types/react': 18.3.3
 
   '@mui/material@5.16.2(@emotion/react@11.11.4(@types/react@18.3.3)(react@19.0.0-rc-f38c22b244-20240704))(@emotion/styled@11.11.5(@emotion/react@11.11.4(@types/react@18.3.3)(react@19.0.0-rc-f38c22b244-20240704))(@types/react@18.3.3)(react@19.0.0-rc-f38c22b244-20240704))(@types/react@18.3.3)(react-dom@19.0.0-rc-f38c22b244-20240704(react@19.0.0-rc-f38c22b244-20240704))(react@19.0.0-rc-f38c22b244-20240704)':
     dependencies:
