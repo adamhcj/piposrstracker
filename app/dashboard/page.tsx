@@ -70,6 +70,9 @@ export default function Page() {
             // sort updated_revenue by revenue
             updated_revenue.sort((a, b) => (a.revenue < b.revenue) ? 1 : -1);
 
+            // cut to top 20
+            updated_revenue.splice(20, updated_revenue.length - 20);
+
             setRevenue(updated_revenue);
         })
 

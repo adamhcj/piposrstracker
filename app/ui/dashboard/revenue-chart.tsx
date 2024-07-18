@@ -23,7 +23,7 @@ export default function RevenueChart({
         label: 'gp (M)',
       },
     ],
-    width: 1000,
+    width: 1500,
     height: 500,
     sx: {
       [`.${axisClasses.left} .${axisClasses.label}`]: {
@@ -49,7 +49,15 @@ export default function RevenueChart({
       <div className="rounded-xl bg-gray-50 p-10">
         <BarChart
           dataset={revenue}
-          xAxis={[{ scaleType: 'band', dataKey: 'month'}]}
+          xAxis={[{
+            scaleType: 'band', 
+            dataKey: 'month',
+            tickLabelStyle: {
+              angle: -15,
+              textAnchor: 'end',
+              fontSize: 10,
+          },
+          }]}
           series={[{dataKey: 'revenue', label: 'earned', valueFormatter}]}
           {...chartSetting}
         />
