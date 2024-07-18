@@ -39,7 +39,7 @@ export default function StickyHeadTable(data: any) {
             let row: any = {};
             for (let j = 0; j < keys.length; j++) {
                 if (keys[j] == 'timestamp') {
-                    row[keys[j]] = new Date(item[keys[j]] * 1000).toLocaleString();
+                    row[keys[j]] = new Date(item[keys[j]] * 1000).toLocaleString('en-GB', { timeZone: 'Asia/Singapore' });
                     continue;
                 }
                 row[keys[j]] = item[keys[j]];
