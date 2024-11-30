@@ -19,6 +19,7 @@ const links = [
     icon: ClockIcon,
   },
   { name: 'Levels', href: '/dashboard/level', icon: ChartBarIcon },
+  { name: 'frenly lp competition', href: '/dashboard/frenlylp', icon: ChartBarIcon },
 ];
 
 export default function NavLinks() {
