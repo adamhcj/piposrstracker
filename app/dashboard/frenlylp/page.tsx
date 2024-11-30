@@ -79,27 +79,28 @@ export default function Page() {
 
       <div>
         <LineChart
-        dataset={dataset}
-        xAxis={[
-          {
-            id: 'Hour',
-            dataKey: 'date',
-            scaleType: 'time',
-          },
-        ]}
-        series={
-          data[0].player_name.split(',').map((player_name) => {
-            return {
-              id: player_name,
-              dataKey: player_name,
-              label: player_name,
-            };
-          })
-        }
-        width={600}
-        height={400}
-        margin={{ left: 70 }}
-      />
+          dataset={dataset}
+          xAxis={[
+            {
+              id: 'Hour',
+              dataKey: 'date',
+              scaleType: 'time',
+            },
+          ]}
+          series={
+            data[0].player_name.split(',').map((player_name) => {
+              return {
+                id: player_name,
+                dataKey: player_name,
+                label: player_name,
+              };
+            })
+          }
+          width={600}
+          height={400}
+          margin={{ left: 70 }}
+          tooltip={{ trigger: 'item' }}
+        />
       </div>
     </main>
   );
