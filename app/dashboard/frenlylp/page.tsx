@@ -31,11 +31,6 @@ export default function Page() {
     let dataset = [
       {
         date: new Date(1732939809.5828943),
-        piplupowo: 16370,
-        'kamo udon': 4630,
-        tonkatzu: 3180,
-        mianbaoroll: 3390,
-        alpoopi: 8710,
       }
     ]
 
