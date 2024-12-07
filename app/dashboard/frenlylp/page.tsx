@@ -50,6 +50,9 @@ export default function Page() {
       for (let j = 0; j < player_names.length; j++) {
         try {
           obj[player_names[j]] = parseInt(scores[j]);
+          if (isNaN(obj[player_names[j]])) {
+            obj[player_names[j]] = 0;
+          }
         }
         catch (e) {
           obj[player_names[j]] = 0;
