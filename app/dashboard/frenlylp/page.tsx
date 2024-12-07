@@ -46,7 +46,13 @@ export default function Page() {
       const scores = score.split(',');
       let obj = {date: new Date(date * 1000)};
       for (let j = 0; j < player_names.length; j++) {
-        obj[player_names[j]] = parseInt(scores[j]);
+        try {
+          obj[player_names[j]] = parseInt(scores[j]);
+        }
+        catch (e) {
+          obj[player_names[j]] = 0;
+        }
+        
       }
       dataset.push(obj);
     }
@@ -88,7 +94,7 @@ export default function Page() {
             },
           ]}
           series={
-            data[0].player_name.split(',').map((player_name) => {
+            data[data.length-1].player_name.split(',').map((player_name) => {
               return {
                 id: player_name,
                 dataKey: player_name,
