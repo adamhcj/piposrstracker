@@ -47,6 +47,10 @@ export default function Page() {
       let obj = {date: new Date(date * 1000)};
       for (let j = 0; j < player_names.length; j++) {
         try {
+          // if not a number, set to 0
+          if (isNaN(parseInt(scores[j]))) {
+            obj[player_names[j]] = 0;
+          }
           obj[player_names[j]] = parseInt(scores[j]);
         }
         catch (e) {
