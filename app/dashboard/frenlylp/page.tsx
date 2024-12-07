@@ -38,19 +38,17 @@ export default function Page() {
     
     // convert data to dataset
     dataset = [];
+    const player_name = data[data.length-1].player_name;
+    const player_names = player_name.split(',');
     for (let i = 0; i < data.length; i++) {
       const date = data[i].timestamp;
-      const player_name = data[i].player_name;
+      
       const score = data[i].score;
-      const player_names = player_name.split(',');
+      
       const scores = score.split(',');
       let obj = {date: new Date(date * 1000)};
       for (let j = 0; j < player_names.length; j++) {
         try {
-          // if not a number, set to 0
-          if (isNaN(parseInt(scores[j]))) {
-            obj[player_names[j]] = 0;
-          }
           obj[player_names[j]] = parseInt(scores[j]);
         }
         catch (e) {
